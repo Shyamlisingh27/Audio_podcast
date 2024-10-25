@@ -26,7 +26,7 @@ const Signup = () => {
   const handleSubmit=async()=>{
     try{
       const res=await axios.post(
-        "http://localhost:8000/api/v1/signup",    //Api endpoint (url) to which request is sent and data is sent
+        "https://audio-podcaster-backend.onrender.com/api/v1/signup",    //Api endpoint (url) to which request is sent and data is sent
          Values     //object containing form data entered by user while submitting signup form, this data is then sent to server through this API request.
       );
       //toast.success(res.data.message);      //shows alert with success msg that account created

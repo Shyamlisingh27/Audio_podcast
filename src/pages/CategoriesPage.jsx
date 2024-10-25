@@ -10,7 +10,7 @@ const CategoriesPage = () => {
 
     useEffect(()=>{                 //use of useeffect: to perform side effects in function components, such as updating the DOM, fetching data, or setting up event listeners and useto get data from backend axios fetch api is used
         const fetch=async()=>{
-            const res=await axios.get(`http://localhost:8000/api/v1/category/${cat}`,{
+            const res=await axios.get(`https://audio-podcaster-backend.onrender.com/api/v1/category/${cat}`,{
               withCredentials:true
             })     //add-podcast m post use kiye the xios k saath kyuki wha data frontend m daal k backend m bhej rhe the yha uss data ko backend se lana h.
             setPodcasts(res.data.data);    

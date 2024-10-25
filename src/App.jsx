@@ -24,7 +24,7 @@ const App = () => {
     const fetch=async()=>{
       try{
         const res=await axios.get(
-          "http://localhost:8000/api/v1/check-cookie",
+          "https://audio-podcaster-backend.onrender.com/api/v1/check-cookie",
           {withCredentials:true}
         )
         if(res.data.message){

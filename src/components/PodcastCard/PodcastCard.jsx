@@ -11,10 +11,10 @@ const PodcastCard = ({items}) => {
             e.preventDefault()
             dispatch(playerActions.setDiv())
             dispatch(
-                playerActions.changeImage(`http://localhost:8000/${items.frontImage}`)
+                playerActions.changeImage(`https://audio-podcaster-backend.onrender.com/${items.frontImage}`)
             )
             dispatch(
-                playerActions.changeSong(`http://localhost:8000/${items.audioFile}`)
+                playerActions.changeSong(`https://audio-podcaster-backend.onrender.com/${items.audioFile}`)
             )
         }
     }
@@ -28,7 +28,7 @@ const PodcastCard = ({items}) => {
         >
             <div>
                 <img 
-                    src={`http://localhost:8000/${items.frontImage}`}
+                    src={`https://audio-podcaster-backend.onrender.com/${items.frontImage}`}
                     className='rounded size-[42vh] object-cover'
                 />
             </div>

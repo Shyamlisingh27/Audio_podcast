@@ -23,7 +23,7 @@ const Header = () => {
   //use of useEffect hook
   useEffect(()=>{
     const fetchUserDetails=async()=>{
-      const res=await axios.get("http://localhost:8000/api/v1/user-details",
+      const res=await axios.get("https://audio-podcaster-backend.onrender.com/api/v1/user-details",
         {withCredentials:true}
       )
       //console.log(res);
@@ -33,7 +33,7 @@ const Header = () => {
   },[]);
 
   const LogoutHandler=async()=>{
-      const res=await axios.post("http://localhost:8000/api/v1/logout",{
+      const res=await axios.post("https://audio-podcaster-backend.onrender.com/api/v1/logout",{
         withCredentials:true
       })
       console.log(res);
